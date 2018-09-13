@@ -1,0 +1,26 @@
+{
+  "name": "arduino-substitution",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "dotenv": "^6.0.0",
+    "nodemon": "^1.18.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarlenaFlueh/temperature-sensor-simulator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarlenaFlueh/temperature-sensor-simulator/issues"
+  },
+  "homepage": "https://github.com/MarlenaFlueh/temperature-sensor-simulator#readme"
+}
