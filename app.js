@@ -6,10 +6,16 @@ const weatherApi = `https://api.darksky.net/forecast/${
   process.env.WEATHER_KEY
 }/53.2464214,10.4115179?exclude=flags,minutely,daily,alerts`;
 
+const config = {
+  headers: {
+    "Access-Control-Allow-Origin": "*",
+    "Content-Type": "application/json"
+  }
+};
 const getData = async () => {
   try {
     console.log("weather API data fetched");
-    const result = await axios.get(weatherApi);
+    const result = await axios.get(weatherApi, config);
     return result.data.currently.temperature;
   } catch (error) {
     console.log(error);
