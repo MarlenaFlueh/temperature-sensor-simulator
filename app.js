@@ -30,7 +30,7 @@ const sendData = async temperature => {
 };
 
 const runEveryHour = () => {
-  setTimeout(executeFunctions, 2000);
+  setTimeout(executeFunctions, 600000);
 };
 
 const executeFunctions = async () => {
